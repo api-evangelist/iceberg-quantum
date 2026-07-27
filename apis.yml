@@ -1,7 +1,28 @@
 aid: iceberg-quantum
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iceberg-quantum.png
 name: Iceberg Quantum
-description: Iceberg Quantum is a company surfaced as a portfolio company of dcvc and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Iceberg Quantum is a quantum architecture firm building fault-tolerant quantum
+  computing systems around LDPC (Low-Density Parity-Check) error-correction codes.
+  Its designs aim to cut the hardware overhead of quantum error correction by more
+  than an order of magnitude, and its Pinnacle architecture claims roughly 10x lower
+  overhead through modular lattice surgery and time-overhead compression. The company
+  is hardware- and architecture-focused rather than a software/API provider; it
+  partners with qubit hardware makers (PsiQuantum, Diraq, Oxford Ionics) and is backed
+  by DCVC, Blackbird, and LocalGlobe. Surfaced as a DCVC portfolio company and added
+  to the API Evangelist network for tracking; there is no public API, SDK, or developer
+  surface to enrich at this stage.
 url: https://raw.githubusercontent.com/api-evangelist/iceberg-quantum/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,30 @@ x-backed-by:
 - dcvc
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-website: https://www.iceberg-quantum.com/
+x-twitter: https://x.com/IcebergQuantum
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Quantum Computing
+- Quantum Error Correction
+- Fault Tolerance
+- LDPC Codes
+- Deep Tech
+- Hardware
 apis: []
+common:
+- type: Website
+  url: https://www.iceberg-quantum.com/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
